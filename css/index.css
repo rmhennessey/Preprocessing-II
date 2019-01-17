@@ -176,20 +176,22 @@ header {
   align-items: baseline;
   border-bottom: 2px dashed black;
 }
-@media (max-width: 500px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 15px;
-    margin-bottom: 0;
-  }
-}
 header .nav-bar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 20px auto;
   align-items: baseline;
+}
+@media (max-width: 500px) {
+  header .nav-bar {
+    width: 100%;
+    max-width: 500px;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+  }
 }
 @media (max-width: 500px) {
   header h1 {
@@ -285,7 +287,7 @@ header nav a {
     max-width: 450px;
     display: flex;
     flex-direction: column;
-    /*margin-left: 50px;*/
+    margin-left: 23px;
   }
 }
 .home .content-section .img-content {
@@ -304,6 +306,7 @@ header nav a {
 @media (max-width: 500px) {
   .home .content-section .img-content img {
     min-width: 100%;
+    margin-left: 22px;
   }
 }
 .home .inverse-content {
@@ -329,7 +332,8 @@ header nav a {
     width: 100%;
     max-width: 450px;
     display: flex;
-    margin-left: 5px;
+    margin-left: 3px;
+    padding-top: 5px;
   }
 }
 .home .inverse-content .img-content {
@@ -338,9 +342,7 @@ header nav a {
 }
 @media (max-width: 500px) {
   .home .inverse-content .img-content {
-    margin: 0 auto;
-    margin-left: 10px;
-    padding-top: 5px;
+    margin-right: 40px;
   }
 }
 .home .content-destination {
@@ -359,11 +361,6 @@ header nav a {
 .home .content-destination img {
   border-radius: 10px;
 }
-@media (max-width: 500px) {
-  .home .content-destination img {
-    padding-top: 20px;
-  }
-}
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
@@ -374,6 +371,7 @@ header nav a {
   .home .content-pick {
     width: 100%;
     max-width: 450px;
+    margin: 0 auto;
     flex-direction: column;
   }
 }
@@ -384,10 +382,10 @@ header nav a {
 @media (max-width: 500px) {
   .home .content-pick .destination {
     width: 100%;
-    max-width: 400px;
-    margin: 0;
-    padding-bottom: 35px;
-    margin-left: 60px;
+    max-width: 425px;
+    margin: 0 auto;
+    padding-bottom: 28px;
+    margin-left: 45px;
   }
 }
 .home .content-pick p {
@@ -406,7 +404,7 @@ header nav a {
 }
 @media (max-width: 500px) {
   .home .content-pick .btn {
-    width: 100%;
+    width: 360px;
     background-color: aqua;
     padding-top: 12px;
   }
