@@ -1,1 +1,19 @@
 // Mixins in here
+
+.main-btn (@width, @height, @bg-color, @font-color) {
+    width: @width;
+    height: @height;
+    background-color: @bg-color;
+    color: @font-color;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 18px;
+    text-align: center;
+
+    @media @mobile {
+        width: 360px;
+        background-color: aqua;
+        padding-top: 12px;
+    }
+}
